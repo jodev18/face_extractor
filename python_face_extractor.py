@@ -3,6 +3,11 @@ import dlib
 from imutils import face_utils
 import os
 
+"""
+    Based (stolen) from:
+    https://github.com/kenryu42/Face-Detection-And-Auto-Crop/blob/master/auto_crop.py
+"""
+
 def crop_boundary(top, bottom, left, right, faces):
     if faces:
         top = max(0, top - 200)
